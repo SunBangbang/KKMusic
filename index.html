@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KK音乐</title>
+    <link rel="icon" href="favicons/1.png">
+    <link rel="stylesheet" href="./css/reset.css"></link>
+    <link rel="stylesheet" href="./css/index.css"></link>
+    
+</head>
+<body>
+    <header class="header">
+        <div class="header-container">
+            <div class="header-top">
+                <a href="index.html" class="logo"></a>
+                <nav class="header-nav">
+                    <ul>
+                        <li><a href="./first.html">音乐馆</a></li>
+                        <li><a href="./like.html" class="header-nav_ourmusic">我的音乐</a></li>
+                        <li><a href="./client.html">下载客户端</a></li>
+                    </ul>
+                </nav>
+                <div class="header-search">
+                    <input type="text" class="text" placeholder="here..."></input>
+                    <button class="search-btn" type="button">搜索</button>
+                </div>
+                <div class="header-login">
+                    <a href="login.html" class="login">登录</a>
+                    <a href="" class="open-green">开通绿钻豪华版</a>
+                    <a href="" class="open-vip">开通付费包</a>
+                  </div>
+            </div>
+            <ul class="header-subNav">
+                <li><a href="./index.html" class="subNav-cur">首页</a></li>
+                <li><a href="./Singer.html">歌手</a></li>
+                <li><a href="./Album.html">专辑</a></li>
+                <li><a href="./Ranking List.html">排行榜</a></li>
+                <li><a href="./song sheet.html">分类歌单</a></li>
+                <li><a href="./MV.html">MV</a></li>
+            </ul>
+        </div>
+    </header>
+
+
+
+    <!-- <audio id="m1" src="./music/ColorfulBar 彩文 - Take Me Home.mp3"></audio>
+    <audio id="m2" src="./music/Dancing With Your Ghost.mp3"></audio>
+    <audio id="m3" src="./music/G.E.M.邓紫棋 - 两个你.mp3"></audio>
+    <audio id="m4" src="./music/3GUNZ _ FIFI - Pepas (Explicit).mp3"></audio>
+    <audio id="m5" src="./music/Jony J - 梦寐以求.mp3"></audio>
+    <audio id="m6" src="./music/Taylor Swift - Love Story (Taylor’s Version).mp3"></audio>
+    <audio id="m7" src="./music/刘思鉴 - 那时候我最懂快乐.mp3"></audio>
+    <audio id="m8" src="./music/就是南方凯 - 问心.mp3"></audio>
+    <audio id="m9" src="./music/李荣浩 _ 张惠妹 - 对等关系.mp3"></audio>
+    <audio id="m10" src="./music/王源 - 穿过寒冬拥抱你.mp3"></audio>
+    <audio id="m11" src="./music/队长 - 哪里都是你.mp3"></audio>
+    <audio id="m12" src="./music/霓虹花园,汉堡黄 - 嘿，请你爱我吧.mp3"></audio> -->
+
+    <!-- 新歌首发 -->
+    <div class="main" id="newSong">
+        <div class="main-inner">
+            <div class="main-title">
+                <h2 class="title"><i></i></h2>
+                <span class="line line-left"></span>
+                <span class="line line-right"></span>
+            </div>
+            <a href="" class="readAll">全部</a>
+            <div class="main-tab">
+                <a href="" class="item-cur">全部</a>
+                <a href="" class="item">华语</a>
+                <a href="" class="item">欧美</a>
+                <a href="" class="item">韩国</a>
+                <a href="" class="item">日本</a>
+            </div>
+            <div class="main-slider">
+                <div class="slider">
+                    <ul class="sliderwrapper" style="left: 0;">
+                        <li>
+                            <a href=""  class="img" >
+                                <img src="./images/slider_img1.jpg" alt="">
+                                <span></span>
+                            </a>
+                            <div class="info">
+                                <div class="title">
+                                    <a>那个静默阳光的午后</a>
+                                </div>
+                                <a href="#" class="author">范玮琪</a>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="" class="img">
+                                <img src="./images/slider_img2.jpg" alt="">
+                                <span></span>
+                            </a>
+                            <div class="info">
+                                <div class="title">
+                                    <a>剑心</a>
+                                </div>
+                                <a href="#" class="author">张杰</a>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="" class="img">
+                                <img src="./images/slider_img3.jpg" alt="">
+                                <span></span>
+                            </a>
+                            <div class="info">
+                                <div class="title">
+                                    <a>你看我扎不扎你</a>
+                                </div>
+                                <a href="#" class="author">王力宏</a>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="" class="img">
+                                <img src="./images/slider_img4.jpg" alt="">
+                                <span></span>
+                            </a>
+                            <div class="info">
+                                <div class="title">
+                                    <a>烟花易冷</a>
+                                </div>
+                                <a href="#" class="author">周杰伦</a>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="" class="img">
+                                <img src="./images/slider_img5.jpg" alt="">
+                                <span></span>
+                            </a>
+                            <div class="info">
+                                <div class="title">
+                                    <a>你看我会不会唱</a>
+                                </div>
+                                <a href="#" class="author">谢娜</a>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="" class="img">
+                                <img src="./images/slider_img6.jpg" alt="">
+                                <span></span>
+                            </a>
+                            <div class="info">
+                                <div class="title">
+                                    <a>春暖花开</a>
+                                </div>
+                                <a href="#" class="author">那英</a>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="" class="img">
+                                <img src="./images/slider_img7.jpg" alt="">
+                                <span></span>
+                            </a>
+                            <div class="info">
+                                <div class="title">
+                                    <a>春天里</a>
+                                </div>
+                                <a href="#" class="author">汪峰</a>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="" class="img">
+                                <img src="./images/slider_img8.jpg" alt="">
+                                <span></span>
+                            </a>
+                            <div class="info">
+                                <div class="title">
+                                    <a>有点甜</a>
+                                </div>
+                                <a href="#" class="author">汪苏泷</a>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="" class="img">
+                                <img src="./images/slider_img9.jpg" alt="">
+                                <span></span>
+                            </a>
+                            <div class="info">
+                                <div class="title">
+                                    <a>有何不可</a>
+                                </div>
+                                <a href="#" class="author">许嵩</a>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="" class="img">
+                                <img src="./images/slider_img10.jpg" alt="">
+                                <span></span>
+                            </a>
+                            <div class="info">
+                                <div class="title">
+                                    <a>四块五的妞</a>
+                                </div>
+                                <a href="#" class="author">隔壁老樊</a>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="" class="img">
+                                <img src="./images/slider_img11.jpg" alt="">
+                                <span></span>
+                            </a>
+                            <div class="info">
+                                <div class="title">
+                                    <a>起风了</a>
+                                </div>
+                                <a href="#" class="author">小辣椒</a>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="" class="img">
+                                <img src="./images/slider_img12.jpg" alt="">
+                                <span></span>
+                            </a>
+                            <div class="info">
+                                <div class="title">
+                                    <a>单身情歌</a>
+                                </div>
+                                <a href="#" class="author">林志炫</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="slider-btns">
+                        <span class="cur"><i></i></span>
+                        <span ><i></i></span>
+                        <span ><i></i></span>
+                    </div>
+                    <div class="main-operate">
+                        <a href="javascipt:;" class="slider-prev" onclick="prebtn()"><i class="icon-sprite"></i></a>
+                        <a href="javascipt:;" class="slider-next" onclick="nextbtn()"><i class="icon-sprite"></i></a>
+                      </div>
+                </div>
+                
+                
+            </div>
+        </div>
+    </div>
+
+
+    <!-- 精彩推荐 -->
+    <div class="main" id="recommend">
+        <div class="main-inner">
+            <div class="main-title">
+                <h2 class="title"><i></i></h2>
+                <span class="line line-left"></span>
+                <span class="line line-right"></span>
+            </div>
+        </div>
+
+          <div class="slide-box">
+            <div class="banner-box"></div>
+            <button class="slide-left-btn material-icons">&lt;</button>
+            <button class="slide-right-btn material-icons">&gt;</button>
+            <div class="pagination-box"></div>
+          </div>
+    </div>
+
+
+    <!-- MV -->
+    <div class="main" id="mv">
+        <div class="main-inner">
+            <div class="main-title">
+                <h2 class="title"><i></i></h2>
+                <span class="line line-left"></span>
+                <span class="line line-right"></span>
+            </div>
+            <a href="#" class="readAll">全部</a>
+            <div class="main-tab">
+                <a href="" class="item item-cur">全部</a>
+                <a href="" class="item">华语</a>
+                <a href="" class="item">欧美</a>
+                <a href="" class="item">港台</a>
+                <a href="" class="item">韩国</a>
+                <a href="" class="item">日本</a>
+            </div>
+            <ul class="mv-list">
+                <li class="item">
+                    <a href=""><img src="./images/mv_img1.jpg"></a>
+                    <div class="info">
+                        <a href="" class="title">Let Me Love You</a>
+                        <a href="" class="author">刘惜君</a>
+                        <span class="play-total">18.8万</span>
+                    </div>
+                </li>
+                <li class="item">
+                    <a href=""><img src="./images/mv_img2.jpg"></a>
+                    <div class="info">
+                        <a href="" class="title">小宇</a>
+                        <a href="" class="author">蓝心羽</a>
+                        <span class="play-total">29万</span>
+                    </div>
+                </li>
+                <li class="item">
+                    <a href=""><img src="./images/mv_img3.jpg"></a>
+                    <div class="info">
+                        <a href="" class="title">只对你有感觉</a>
+                        <a href="" class="author">要不要买菜</a>
+                        <span class="play-total">10.9万</span>
+                    </div>
+                </li>
+                <li class="item">
+                    <a href="#"><img src="./images/mv_img4.jpg"></a>
+                    <div class="info">
+                        <a href="#" class="title">收藏</a>
+                        <a href="#" class="author">苡慧</a>
+                        <span class="play-total">29万</span>
+                    </div>
+                </li>
+                <li class="item">
+                    <a href="#"><img src="./images/mv_img5.jpg"></a>
+                    <div class="info">
+                        <a href="#" class="title">就是爱你</a>
+                        <a href="#" class="author">陶喆</a>
+                        <span class="play-total">18.6万</span>
+                    </div>
+                </li>
+                <li class="item">
+                    <a href="#">
+                        <img src="./images/mv_img6.jpg">
+                        <i class="play-icon"></i>
+                    </a>
+                    <div class="info">
+                        <a href="#" class="title">雀跃</a>
+                        <a href="#" class="author">任然</a>
+                        <span class="play-total">17万</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="footer-inner">
+            <div class="footer-copyright">
+                <p>
+                    <a href="./self-introduce.html">关于我们</a>
+                </p>
+                <p>Copyright © 1998 - 2017 kk. All Rights Reserved.</p>
+                <p>我们公司 版权所有 我们网络文化经营许可证</p>
+              </div>
+        </div>
+    </footer>
+</body>
+
+
+
+
+
+</html>
+
+<script>
+    let list = document.querySelector('.sliderwrapper')
+    let mainslider = document.querySelector('.main-slider')
+    let mainoperate = document.querySelector('main-operate')
+    let left = 0
+    let sliderprev = document.querySelector('slider-prev')
+    let slidernext = document.querySelector('slider-next')
+
+    let timer
+
+    timer = setInterval(function () {
+        left -= 300
+        if(left === -(300 * 9)){
+            left = 0
+        }
+        list.style.left = left + 'px'
+        },1000)
+
+    mainslider.onmouseenter = function (){
+        clearInterval(timer)
+    }
+    mainslider.onmouseleave = function (){
+        timer = setInterval(function () {
+        left -= 300
+        if(left === -(300 * 9)){
+            left = 0
+        }
+        list.style.left = left + 'px'
+        },1000)
+
+    
+    }
+    
+
+    slidernext.onmouseenter = function() {
+        clearInterval(timer)
+    }
+    sliderpre.onmouseenter = function() {
+        clearInterval(timer)
+    }
+
+
+    function prebtn(){
+        left += 300
+        if(left === 300){
+            left = -2400;
+        }
+        list.style.left = left + 'px'
+    }
+    function nextbtn(){
+        left -= 300
+        if(left === -(300 * 9)){
+            left = 0;
+        }
+        list.style.left = left + 'px'
+    }
+
+
+
+
+//     let m1 = document.getElementById("m1");
+//     let m2 = document.getElementById("m2");
+//     let m3 = document.getElementById("m3");
+//     let m4 = document.getElementById("m4");
+//     let m5 = document.getElementById("m5");
+//     let m6 = document.getElementById("m6");
+//     let m7 = document.getElementById("m7");
+//     let m8 = document.getElementById("m8");
+//     let m9 = document.getElementById("m9");
+//     let m10 = document.getElementById("m10");
+//     let m11 = document.getElementById("m11");
+//     let m12 = document.getElementById("m12");
+
+//     function onplay (e) {
+//         if(m+'e'.paused) {
+//             m+'e'.play();
+//         } else {
+//             m+'e'.pause();
+//     }
+// }
+
+
+</script>
+
+
+<script type="text/javascript" src="./js/carousel.js"></script>

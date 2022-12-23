@@ -1,0 +1,153 @@
+body{
+    background: url("../images/e8cc69a033744d01c4eef0e9a9304c54.jpeg") top left/100%;
+}
+.fr{
+    float: right;
+}
+.fl{
+    float: left;
+}
+.clearfix::after {
+    display: block;
+    content: "";
+    clear: both;
+}
+body .beijing{
+    width: 100%;
+}
+.beijing h3{
+    padding-top: 5px;
+    color: rgb(132, 112, 247);  
+}
+.beijing h3 a {
+    padding-top: 5px;
+    color: rgb(132, 112, 247);  
+}
+body .beijing img{
+    width: 100%;
+}
+.woxihuan .a,
+.tranform .a{
+    height: 80px;
+    line-height: 80px;
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+    color: #7dc3ec;
+    font-family: 宋体;
+    font-weight: 1000;
+    margin-top: 30px;
+}
+.woxihuan .a:hover,
+.tranform .a:hover,
+.h3:hover a{
+    letter-spacing: 4px;
+    color: rgb(234 138 164);
+    transition: 0.7s, 0.7s;
+}
+.woxihuan {
+    width: 750px;
+    margin: 0 auto;
+    color: #fff;
+    margin-bottom: 30px;
+}
+.woxihuan ul {
+    width: 100%;
+}
+.woxihuan ul:last-child {
+    margin-right: 0px;
+}
+.woxihuan ul li {
+    height: 30px;
+    line-height: 30px;
+}
+.woxihuan ul li span {
+    background: rgb(226, 118, 169);
+    width: 15px;
+    height: 15px;
+    line-height: 15px;
+    text-align: center;
+    display: block;
+    float: left;
+    margin: 8px 10px 0 0;
+    font-size: 12px;
+    border-radius: 3px;
+}
+.woxihuan ul li a{
+    display: block;
+    width: 400px;
+    float: left;
+    color: #fff;
+}
+.woxihuan ul li a:hover {
+    color:cyan;
+}
+.woxihuan ul li audio{
+    float: right;
+    height: 15px;
+    padding-right: 20px;
+}
+
+/* 轮播图 */
+
+.tranform{
+    width: 650px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+.tranform .wrapper {
+    width: 660px;
+    height: 460px;
+    overflow: hidden;
+    border: 2px solid #7dc3ec;
+    border-radius: 5px;
+    position: relative;
+}
+.tranform .wrapper ul {
+    width: 5250px;
+    height: 460px;
+    padding: 5px;
+    position: absolute;
+    animation: img-box 32s ease-in infinite;
+}
+.tranform .wrapper ul li {
+    float: left;
+    width: 650px;
+    height: 450px;
+    margin-right: 5px;
+}
+.tranform .wrapper ul li a img {
+    width: 650px;
+    overflow: hidden;
+}
+@keyframes img-box {
+    0%,2% {
+        left: 0;
+    }
+    14.2%,16.2% {
+        left: -655px;
+    }
+    28.4%,30.4% {
+        left: -1310px;
+    }
+    42.6%,44.6% {
+        left: -1965px;
+    }
+    56.8%,58.8% {
+        left: -2620px;
+    }
+    71%,73% {
+        left: -3275px;
+    }
+    84.8%,86.8% {
+        left: -3930px;
+    }
+    98.5%,100% {
+        left: -4585px;
+    }
+
+}
+
+
+

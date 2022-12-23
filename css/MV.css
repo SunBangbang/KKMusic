@@ -1,0 +1,162 @@
+
+  body {
+    font-family: Arial;
+    padding: 10px;
+    /*background:url(D:\web\30组\images\background-1.jpg) bottom;*/
+    background-repeat: no-repeat;
+    background-color: #e8e8e8;
+    background-size: 100% 100%;
+  }
+  
+
+  /* 页眉/Blog 标题 */
+.header {
+  padding: 10px;
+  text-align: center;
+  background-image: url("D:\web\大作业\images\biaotou.jpg");
+}
+
+.header h1 {
+  font-size: 50px;
+}
+/* 创建并排的三个非等列 */
+.column {
+  float: left;
+  padding: 10px;
+}
+/* 左列 */
+.column.leftcolumn-none {  
+
+  height: 100px;
+  width: 5.5%;
+  
+}
+.column.Column { 
+
+  width: 92%;
+}
+.column.Column h2{
+    color:antiquewhite
+    
+}
+.column.rightcolumn-none{   
+  height: 100px;
+  width: 4%;
+}
+/* 响应式布局 - 当屏幕的宽度小于 800 像素时，使两列堆叠而不是并排 */
+@media screen and (max-width: 800px) {
+    column.leftcolumn-none,.column.Column,.column.rightcolumn { 
+    width: 100%;
+    padding: 0;
+  }
+}
+/* 清除列之后的浮动 */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* 设置页脚的样式 */
+.footer {
+  background-color: #f1f1f1;
+  padding: 10px;
+  text-align: center;
+}
+
+
+
+.img-container {
+    float: left;
+    width: 24%;
+    padding: 5px;
+    margin: 40px 2px;
+    overflow: hidden;
+    border: 2px solid #a9ebff;
+    box-shadow: 0 0 6px rgb(0 0 0 / 15%);
+      -moz-box-shadow: 0 0 6px rgba(0,0,0,0.15);
+      -webkit-box-shadow: 0 0 6px rgb(0 0 0 / 15%);
+    
+  }
+  .img-container img{
+    cursor: pointer;
+    transition: all 0.6s;
+  }
+  .img-container img:hover{
+    transform: scale(1.1);
+  }
+  .img-container span{
+    font-weight: normal;
+    font-size: 5px;
+    color: #72d47f;
+  }
+  .img-container p:link {
+    text-decoration: none;
+    color: rgb(194, 123, 25);
+  }
+  
+  .img-container p {
+    text-decoration: none;
+    color: rgb(194, 123, 25);
+  }
+  
+  .img-container p:hover {
+    text-decoration: none;
+    color: rgb(48, 179, 65);
+  }
+  
+  .clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  .Pricebutton {
+    float: left;
+    padding: 5px;
+  }
+  /* 左列 */
+  .Pricebutton.Price {  
+    width: 50%;
+  }
+  .Pricebutton.none {  
+    width: 10%;
+  }
+  .Pricebutton.button {  
+    width: 40%;
+  }
+
+  button {
+    color: var(--color);
+    transition: 0.25s;
+  }
+  button:hover, button:focus {
+    border-color: var(--hover);
+    color: #fff;
+  }
+  button {
+    background: none;
+    border: 1px solid;
+    font: inherit;
+    line-height: 1;
+    margin: 0.1em;
+    padding: 0.3em 1em;
+  }
+  .offset {
+    --color: #19bc8b;
+    --hover: #1973bc;
+  }
+
+  .offset {
+    box-shadow: 0.3em 0.3em 0 0 var(--color), inset 0.3em 0.3em 0 0 var(--color);
+  }
+  .offset:hover, .offset:focus {
+    box-shadow: 0 0 0 0 var(--hover), inset 6em 3.5em 0 0 var(--hover);
+  }    
+
+
+
+  video {
+    max-width: 100%;
+    height: 100%;
+  }

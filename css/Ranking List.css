@@ -1,0 +1,321 @@
+
+  body {
+    font-family: Arial;
+    padding: 10px;
+    /*background:url(D:\web\30组\images\background-1.jpg) bottom;*/
+    background-repeat: no-repeat;
+    background-color:  hsla(0, 10%, 94%, 0.972);
+    background-position: right top;
+    background-size: 100% 100%;
+  }
+  
+  a:link {
+    text-decoration: none;
+    color: rgb(10, 1, 1);
+  }
+  
+  a:visited {
+    text-decoration: none;
+    color: rgb(12, 0, 0);
+  }
+  
+  a:hover {
+    text-decoration: none;
+    color: rgb(48, 179, 65);
+  }
+  
+  a:active {
+    text-decoration: underline;
+    color: rgb(30, 173, 66);
+  }
+/*粘性位置音乐播放器*/
+  div.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    padding: 5px;
+    background-color: #cae8ca;
+    border: 2px solid #4CAF50;
+  }
+  /* 页眉/Blog 标题 */
+.header {
+  padding: 10px;
+  text-align: center;
+}
+
+.header h1 {
+  font-size: 50px;
+}
+/* 创建并排的三个非等列 */
+.column {
+  float: left;
+  padding: 10px;
+}
+/* 左列 */
+.column.leftcolumn-none {  
+
+  
+  width: 15%;
+  
+}
+.column.leftcolumn { 
+  height: 350px;
+  border: 2px solid #a9ebff;
+  box-shadow: 0 0 6px rgb(0 0 0 / 15%);
+    -moz-box-shadow: 0 0 6px rgba(0,0,0,0.15);
+    -webkit-box-shadow: 0 0 6px rgb(0 0 0 / 15%);
+  
+  width: 10%;
+  background-color: rgba(255, 255, 255, 0.992);
+}
+.column.none {  
+
+  height: 100px;
+  width: 1%;
+  
+}
+/* 右列 */
+.column.rightcolumn {
+  width: 59%;
+  border: 2px solid #a9ebff;
+  box-shadow: 0 0 6px rgb(0 0 0 / 15%);
+    -moz-box-shadow: 0 0 6px rgba(0,0,0,0.15);
+    -webkit-box-shadow: 0 0 6px rgb(0 0 0 / 15%);
+  
+  background-color: rgba(255, 255, 255, 0.992);
+  padding-left: 20px;
+}
+.column.rightcolumn-none{   
+  
+  width: 15%;
+}
+/* 响应式布局 - 当屏幕的宽度小于 800 像素时，使两列堆叠而不是并排 */
+@media screen and (max-width: 800px) {
+  .column.leftcolumn,.column.leftcolumn-none,.column.rightcolumn,.column.rightcolumn-none {   
+    width: 100%;
+    padding: 0;
+  }
+}
+/* 清除列之后的浮动 */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* 设置页脚的样式 */
+.footer {
+  background-color: rgba(255, 255, 255, 0.992);
+  border: 2px solid #a9ebff;
+  box-shadow: 0 0 6px rgb(0 0 0 / 15%);
+    -moz-box-shadow: 0 0 6px rgba(0,0,0,0.15);
+    -webkit-box-shadow: 0 0 6px rgb(0 0 0 / 15%);
+  /*padding: 10px;*/
+  text-align: center;
+}
+
+.Ranking-type {
+  float: left;
+  padding: 30px 5px;
+  width: 50%;
+}
+.Ranking-type.left  {
+  height: 10px;
+}
+.Ranking-type.right  {
+  height: 10px;
+
+}
+p.Ranking-type {
+  font-weight: bold;
+}
+
+
+
+.part-one{
+  float: left;
+  padding:10px 20px;
+}
+.part-one.left{
+  width: 20%;
+}
+.part-one.middle{
+  width: 10%;
+}
+.part-one.right{
+  width: 70%;
+}
+
+
+
+
+
+.fill:hover,
+.fill:focus {
+  box-shadow: inset 0 0 0 2em var(--hover);
+}
+
+.pulse:hover,
+.pulse:focus {
+  -webkit-animation: pulse 1s;
+          animation: pulse 1s;
+  box-shadow: 0 0 0 2em rgba(255, 255, 255, 0);
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 var(--hover);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 var(--hover);
+  }
+}
+.close:hover,
+.close:focus {
+  box-shadow: inset -3.5em 0 0 0 var(--hover), inset 3.5em 0 0 0 var(--hover);
+}
+
+.raise:hover,
+.raise:focus {
+  box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+  transform: translateY(-0.25em);
+}
+
+.up:hover,
+.up:focus {
+  box-shadow: inset 0 -3.25em 0 0 var(--hover);
+}
+
+.slide:hover,
+.slide:focus {
+  box-shadow: inset 6.5em 0 0 0 var(--hover);
+}
+
+.offset {
+  box-shadow: 0.3em 0.3em 0 0 var(--color), inset 0.3em 0.3em 0 0 var(--color);
+}
+.offset:hover, .offset:focus {
+  box-shadow: 0 0 0 0 var(--hover), inset 6em 3.5em 0 0 var(--hover);
+}
+
+.fill {
+  --color: #a972cb;
+  --hover: #cb72aa;
+}
+
+.pulse {
+  --color: #ef6eae;
+  --hover: #ef8f6e;
+}
+
+.close {
+  --color: #ff7f82;
+  --hover: #ffdc7f;
+}
+
+.raise {
+  --color: #ffa260;
+  --hover: #e5ff60;
+}
+
+.up {
+  --color: #e4cb58;
+  --hover: #94e458;
+}
+
+.slide {
+  --color: #8fc866;
+  --hover: #66c887;
+}
+
+.offset {
+  --color: #19bc8b;
+  --hover: #1973bc;
+}
+
+button {
+  color: var(--color);
+  transition: 0.25s;
+}
+button:hover, button:focus {
+  border-color: var(--hover);
+  color: #fff;
+}
+button {
+  background: none;
+  border: 2px solid;
+  font: inherit;
+  line-height: 1;
+  margin: 0.5em;
+  padding: 1em 2em;
+}
+
+
+
+
+
+.play-button{
+  float: left;
+  padding:10px 20px;
+  width: 20%;
+}
+.play-button.one{
+  height: 10px;
+}
+.play-button.two{
+  height: 10px;
+}
+.play-button.three{
+  height: 10px;
+}
+.play-button.four{
+  height: 10px;
+}
+.play-button.five{
+  height: 10px;
+}
+
+
+.play-button a:link {
+    background-color: #425ac5;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border: 2px solid rgb(58, 114, 146);
+    border-radius: 5px;
+   
+}
+.play-button a:visited {
+  background-color: #425ac5;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border: 2px solid rgb(58, 114, 146);
+  border-radius: 5px;
+  
+}
+.play-button a:hover {
+  background-color: rgb(45, 83, 141);
+  border: 2px solid rgb(133, 123, 216);
+  border-radius: 5px;
+  
+}
+.play-button a:active {
+  background-color: rgb(45, 83, 141);
+  border: 2px solid rgb(133, 123, 216);
+  border-radius: 5px;
+  
+}
+
+.Music-List table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid black;
+}

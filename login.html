@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KK音乐</title></title>
+    <link rel="icon" href="favicons/1.png">
+    <link rel="stylesheet" href="./css/reset.css"></link>
+    <link rel="stylesheet" href="./css/login.css"></link>
+    <script type="text/javascript">
+        function loginqq() {
+            var a = document.getElementById('login-style-id');
+            var b = document.getElementById('login-qqnum-id');
+            var inputtext1 = document.getElementById('qqzhanghao').value='';
+            var inputtext2 = document.getElementById('qqmima').value='';
+            a.style.display = "none";
+            b.style.display = "block";
+        }
+
+        function loginwx() {
+            var a = document.getElementById('login-style-id');
+            var b = document.getElementById('login-wxsm-id');
+            a.style.display = "none";
+            b.style.display = "block";
+        }
+
+        function return1() {
+            var a = document.getElementById('login-style-id');
+            var b = document.getElementById('login-qqnum-id');
+            a.style.display = "block";
+            b.style.display = "none";
+        }
+        function return2() {
+            var a = document.getElementById('login-style-id');
+            var b = document.getElementById('login-wxsm-id');
+            a.style.display = "block";
+            b.style.display = "none";
+        }
+        function set() {
+            var a = document.getElementById('login-style-id');
+            var b = document.getElementById('login-set-id');
+            a.style.display = "none";
+            b.style.display = "block";
+        }
+    </script>
+    
+    <script type="text/javascript" src="./js/login.js"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="header-container">
+            <div class="header-top">
+                <a href="index.html" class="logo"></a>
+                <span class="logo-point">·</span>
+                <div class="login-text">登录</div>
+
+                <div class="header-btn" id="header-vip">
+                    <a href="./vip.html">
+                        <img class="header-icon" src="./images/VIP.png" alt="">
+                        <div>VIP</div>
+                    </a>
+                </div>
+                <div class="header-btn" id="header-chuangzuozhongxin">
+                    <a href="./chuangzuozhongxin.html">
+                        <img class="header-icon" src="./images/创作中心.png" alt="">
+                        <div>创作中心</div>
+                    </a>
+                </div>
+                <div class="header-btn" id="header-kehuduan">
+                    <a href="./contact.html">
+                        <img class="header-icon" src="./images/客户端.png" alt="">
+                        <div>联系我们</div>
+                    </a>
+                    
+                </div>
+                <div class="header-btn" id="header-more">
+                    <a href="./play_music.html">
+                        <img class="header-icon" src="./images/更多.png" alt="">
+                        <div>网页播放器</div>
+                    </a>
+                </div>
+            </div>
+            
+        </div>
+    </header>
+
+    <!-- 主体 -->
+    <div class="main-container">
+        <div class="main-login">
+            <div class="login-background">
+                <img src="./images/login-a.png" alt="">
+            </div>
+            <div class="login-table">
+                <div class="login-logo">
+                    <img src="./images/logo1.png" alt="">
+                </div>
+                <span class="logo-underline"></span>
+                <div class="login-style" id="login-style-id" style="display: block;">
+                    <div class="login-way" id="login-qq">
+                        <a href="javascript:;" onclick="loginqq()">
+                            <img class="qq-img" src="./images/QQlogin.png" alt="">
+                            <span class="loginway-text">QQ登录</span>
+                        </a>
+                    </div>
+                    <div class="login-way" id="login-wx" >
+                        <a href="javascript:;" onclick="loginwx()">
+                            <img class="wx-img" src="./images/wxlogin.png" alt="">
+                            <span class="loginway-text">微信登录</span>
+                        </a>
+                    </div>
+                    <div class="login-register">
+                        <span class="login-line"></span>
+                        <span class="login-register-text">没有账号，点击<a href="javascript:;" onclick="set()">注册</a></span>
+                        <span class="login-line"></span>
+                    </div>
+                </div>
+                <div class="login-qqnum" id="login-qqnum-id" style="display: none;">
+                    <div>
+                        <div class="qq-info" >
+                            <span>账号：</span>
+                            <input type="text" name="username" id="qqzhanghao" onblur="checkUsername(this.value);" placeholder="    请输入qq账号" required>
+                            <span id="checkUserNameResult" style="color: red ;font-size: 10px;margin-left: 100px;" ></span>
+                        </div>
+                        <div class="qq-info">
+                            <span>密码：</span>
+                            <input type="password" name="password" id="qqmima" onblur="checkPassword(this.value)" placeholder="    请输入qq密码" required>
+                            <span id="checkPasswordResult" style="color: red ;font-size: 10px;margin-left: 100px;"></span>
+                        </div>
+                        <button id="qq-login-yes"><a href="./index.html">登录</a></button>
+                        <span id="return-login-way"><a href="javascrpt:;" onclick="return1()">返回</a></span>
+                    </div>
+                </div>
+                <div class="login-wxsm" id="login-wxsm-id" style="display: none;">
+                    <div>
+                        <span id="wxt">请扫描以下二维码登录</span>
+                        <img class="wxewm" src="./images/showqrcode.png" alt="">
+                        <span><a id="wx-text" href="javascript:;" onclick="return2()">返回</a></span>
+                    </div>
+                </div>
+                <div class="set-num" id="login-set-id" style="display: none;">
+                    <div class="input-box" id="username">
+                        <span>用户名：</span>
+                        <input type="text" id="username-id" onblur="checkUsername1(this.value)">
+                        <span id="checkUserNameResult1" style="color: red ;font-size: 10px;" ></span>
+                    </div>
+                    <div class="input-box" id="user-password" >
+                        <span>密&nbsp;&nbsp;&nbsp;码：</span>
+                        <input type="password" id="password-id" onblur="checkPassword1(this.value)">
+                        <span id="checkPasswordResult1" style="color: red ;font-size: 10px;"></span>
+                    </div>
+                    <div class="input-box" id="phone-num">
+                        <span>手机号：</span>
+                        <input type="text" onblur="checkPhonenum(this.value)">
+                        <span id="checkPhonenum" style="color: red;font-size: 10px;"></span>
+                    </div>
+                    <!-- <div class="input-box" id="test-num">
+                        <span>验证码：</span>
+                        <input type="text" onblur="checkNum(this.value)">
+                        <span id="checknum" style="color: red;font-size: 10px;"></span>
+                    </div> -->
+                    <div onload="createCode()">
+                        <div id="form1" runat="server" onsubmit="validateCode()">
+                            <div>
+                             <span id="yanzhengma">验证码：</span>
+                             <input type="text" id="inputCode" onblur="validateCode()"/>
+                             <!-- <input id="Button1" onclick="validateCode();" type="button" value="检查" style="display: block;width: 50px;border: #000 1px solid; border-radius: 3px; margin: 10px 40px 0px;float: right;"/> -->
+                             <div class="code" id="checkCode" onclick="createCode()"></div>
+                             <span id="nosee" onclick="createCode()">看不清换一张</span>
+                            </div>
+                        </div>
+                    </div>
+                    <button id="set-num"><a class="reset" href="./login.html"><span>注册</span></a></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="footer-inner">
+            <div class="footer-copyright">
+                <p>
+                    <a href="#">关于我们</a>
+                </p>
+                <p>Copyright © 1998 - 2017 kk. All Rights Reserved.</p>
+                <p>我们公司 版权所有 我们网络文化经营许可证</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+
+<script type="text/javascript">
+    function checkUsername(obj){
+        var username = obj;
+        var checkUserNameResult = document.getElementById("checkUserNameResult");  
+        if(username.trim().length==0){
+            checkUserNameResult.innerHTML = "用户名不能为空";
+        }else{
+            checkUserNameResult.innerHTML = "";  
+        }
+    }
+
+    function checkPassword(obj) {
+        var password = obj;
+        var checkPasswordResult = document.getElementById("checkPasswordResult"); 
+        if (password.trim().length==0){
+            checkPasswordResult.innerHTML = "密码不能为空";  
+        }else{
+            checkPasswordResult.innerHTML = "";  
+        }
+    }
+
+
+
+    function checkUsername1(obj){
+        var username = obj;
+        var checkUserNameResult1 = document.getElementById("checkUserNameResult1");  
+        if(username.trim().length==0){
+            checkUserNameResult1.innerHTML = "用户名不能为空";
+        }else{
+            checkUserNameResult1.innerHTML = "";  
+        }
+    }
+
+    function checkPassword1(obj) {
+        var password = obj;
+        var checkPasswordResult1 = document.getElementById("checkPasswordResult1"); 
+        if (password.trim().length==0){
+            checkPasswordResult1.innerHTML = "密码不能为空";  
+        }else{
+            checkPasswordResult1.innerHTML = "";  
+        }
+    }
+
+    function checkPhonenum(obj) {
+        var phonenum = obj;
+        var checkPhonenum = document.getElementById("checkPhonenum");
+        if(phonenum.trim().length==0){
+            checkPhonenum.innerHTML = "手机号码不能为空";
+        }else{
+            checkPhonenum.innerHTML = "";
+        }
+    }
+    
+    function checkNum(obj) {
+        var num = obj;
+        var checkNum = document.getElementById("checknum");
+        if(num.trim().length==0){
+            checkNum.innerHTML = "验证码不能为空";
+        }else{
+            checkNum.innerHTML = "";
+        }
+    }
+
+
+
+
+    var code;
+    function createCode() 
+    {
+     code = "";
+     var codeLength = 6; //验证码的长度
+     var checkCode = document.getElementById("checkCode");
+     var codeChars = new Array(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 
+       'a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z',
+       'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'); //所有候选组成验证码的字符，当然也可以用中文的
+     for(var i = 0; i < codeLength; i++) 
+     {
+     var charNum = Math.floor(Math.random() * 52);
+     code += codeChars[charNum];
+     }
+     if(checkCode) 
+     {
+     checkCode.className = "code";
+     checkCode.innerHTML = code;
+     }
+}
+function validateCode() 
+{
+    var inputCode=document.getElementById("inputCode").value;
+    if(inputCode.length <= 0) 
+    {
+    alert("请输入验证码！");
+    }
+    else if(inputCode.toUpperCase() != code.toUpperCase()) 
+    {
+     alert("验证码输入有误！");
+      createCode();
+    }
+    else 
+    {
+    alert("验证码正确！");
+    }  
+} 
+</script>

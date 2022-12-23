@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>创作中心</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/chuangzuozhongxin.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="header-top">
+                <a href="index.html" class="logo"></a>
+                <span class="logo-point">·</span>
+                <div class="login-text">创作中心</div>
+
+                <div class="header-btn" id="header-vip">
+                    <a href="./vip.html">
+                        <img class="header-icon" src="./images/VIP.png" alt="" >
+                        <div>VIP</div>
+                    </a>
+                </div>
+                <div class="header-btn" id="header-chuangzuozhongxin">
+                    <a href="./chuangzuozhongxin.html">
+                        <img class="header-icon" src="./images/创作中心-1.png" alt="">
+                        <div class="kehuduan-cur">创作中心</div>
+                    </a>
+                </div>
+                <div class="header-btn" id="header-kehuduan">
+                    <a href="./contact.html">
+                        <img class="header-icon" src="./images/客户端.png" alt="">
+                        <div >联系我们</div>
+                    </a>
+                    
+                </div>
+                <div class="header-btn" id="header-more">
+                    <a href="./play_music.html">
+                        <img class="header-icon" src="./images/更多.png" alt="">
+                        <div>网页播放器</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="body-container">
+        <div class="container-top">
+            <div>
+                <div class="img-head">
+                    <img src="./images/wangzixuan.jpg" alt="">
+                </div>
+                <div class="head-info">
+                    <div class="head-name">王子璇</div>
+                    <div class="head-num">KK号：1703157643</div>
+                </div>
+                <div class="head-money">
+                    <span>金币：99999</span>
+                    <span>点券：66666</span>
+                </div>
+                <button id="onload-btn">点击上传我的音乐</button>
+            </div>
+        </div>
+        <div class="container-left">
+            <ul class="form-left">
+                <a href="javascript:;" onclick="see()"><li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;我的信息</li></a>
+                <a href="javascript:;" onclick="seelevel()"><li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;等级成长</li></a>
+                <a href=""><li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;听歌历史</li></a>
+                <a href=""><li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;我的VIP</li></a>
+                <a href=""><li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;我的音乐</li></a>
+                <a href=""><li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;我的佣金</li></a>
+                <a href=""><li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;我的单曲</li></a>
+                <a href=""><li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;我的视频</li></a>
+        </div>
+        <div class="container-right">
+
+        </div>
+        <div class="container-body">
+            <div id="part1">
+                <div class="basicl-text">
+                    <span class="item-bascial">基本信息</span>
+                    <span class="line"></span>
+                    <span class="bianji">年龄：&nbsp;19岁</span>
+                    <span class="bianji">性别：&nbsp;女</span>
+                    <span class="bianji">所在地：&nbsp;山&nbsp;&nbsp;东&nbsp;</span>
+                </div>
+                <div class="num-set">
+                    <span class="item-bascial">账号设置</span></span>
+                    <span class="line"></span>
+                    <div class="set-item">
+                        <img src="./images/手机.png" alt="">
+                        <span class="num-item">修改绑定手机</span>
+                        <Button type="button" class="phone-numreset">修改手机</Button>
+                        <span class="num-item-second">已绑定手机号：133****1971</span>
+                    </div>
+                    <div class="set-item">
+                        <img id="reset-num" src="./images/修改密码.png" alt="">
+                        <span class="num-item">修改密码</span>  
+                        <Button type="button" class="phone-numreset">修改密码</Button>
+                        <span class="num-item-second">建议定期修改密码</span>
+                    </div>  
+                </div>
+            </div>
+            <div id="part2" style="display: none;">
+                <div class="p2-head">
+                    <div class="img-head"><img src="./images/wangzixuan.jpg" alt=""></div>
+                    <div class="head-name">王子璇</div>
+                    <div class="level">LV:&nbsp;9999</div>
+                    <div class="experience"><div></div></div>
+                    <div class="score">
+                        <span>积分</span>
+                        <div>
+                            2190
+                        </div>
+                    </div>
+                </div>
+                <div class="level-nb">
+                    <span class="item-bascial" id="ln">等级特权</span>
+                    <span class="line"></span>
+                    <div>
+                        <div class="level-item">
+                            <img src="./images/levelicon.png" alt="">
+                            <span>等级标志</span>
+                        </div>
+                        <div class="level-item">
+                            <img src="./images/level2_icon.png" alt="">
+                            <span>青铜宝箱</span>
+                        </div>
+                        <div class="level-item">
+                            <img src="./images/theme_skin_icon.png" alt="">
+                            <span>个性皮肤</span>
+                        </div>
+                        <div class="level-item">
+                            <img src="./images/vipcs.png" alt="">
+                            <span>VIP客服</span>
+                        </div>
+                        <div class="level-item">
+                            <img src="./images/blackground.png" alt="">
+                            <span>个性背景</span>
+                        </div>
+                        <div class="level-item">
+                            <img src="./images/message_bubble.png" alt="">
+                            <span>私信气泡</span>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="level-rw">
+                    <span class="item-bascial" id="ln">任务中心</span>
+                    <span class="line"></span>
+                    <div>
+                        <div class="rw-item">
+                            <div>
+                                <span class="title1">累计听音乐66分钟</span>
+                                <span class="record">奖励：经验+66</span>
+                            </div>
+                            <button class="btn-level">去完成</button>
+                        </div>
+                        <div class="rw-item">
+                            <div>
+                                <span class="title1">下载一首歌曲</span>
+                                <span class="record">奖励：经验+66</span>
+                            </div>
+                            <button class="btn-level">去完成</button>
+                        </div>
+                        <div class="rw-item">
+                            <div>
+                                <span class="title1">观看一首MV</span>
+                                <span class="record">奖励：经验+66</span>
+                            </div>
+                            <button class="btn-level">去完成</button>
+                        </div>
+                        <div class="rw-item">
+                            <div>
+                                <span class="title1">分享一首歌曲</span>
+                                <span class="record">奖励：经验+66</span>
+                            </div>
+                            <button class="btn-level">去完成</button>
+                        </div>
+                        <div class="rw-item">
+                            <div>
+                                <span class="title1">发布一首歌</span>
+                                <span class="record">奖励：经验+66</span>
+                            </div>
+                            <button class="btn-level">去完成</button>
+                        </div>
+                        <div class="rw-item">
+                            <div>
+                                <span class="title1">订阅一位歌手</span>
+                                <span class="record">奖励：经验+66</span>
+                            </div>
+                            <button class="btn-level">去完成</button>
+                        </div>
+                        <div class="rw-item">
+                            <div>
+                                <span class="title1">送出一次礼物</span></span>
+                                <span class="record">奖励：经验+66</span>
+                            </div>
+                            <button class="btn-level">去完成</button>
+                        </div>
+                        <div class="rw-item">
+                            <div>
+                                <span class="title1">成功收到一份礼物</span></span>
+                                <span class="record">奖励：经验+66</span>
+                            </div>
+                            <button class="btn-level">去完成</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="footer-inner">
+            <div class="footer-copyright">
+                <p>
+                    <a href="#">关于我们</a>
+                </p>
+                <p>Copyright © 1998 - 2017 kk. All Rights Reserved.</p>
+                <p>我们公司 版权所有 我们网络文化经营许可证</p>
+              </div>
+        </div>
+    </footer>
+
+
+
+    <script>
+        let myinfo = document.getElementById('part1');
+        let mylevel = document.getElementById('part2');
+    
+
+
+        function see() {
+            myinfo.style.display = 'block';
+            mylevel.style.display = 'none';
+        }
+        function seelevel() {
+            myinfo.style.display = 'none';
+            mylevel.style.display = 'block';
+        }
+    </script>
+
+</body>
+</html>

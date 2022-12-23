@@ -1,0 +1,73 @@
+body{
+    /*background-image: url("D:\webdemo\images\pic2.gif");*/
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+ }
+ 
+
+ 
+
+ 
+
+ h2{
+     text-align: center;
+     margin-top: 10px;
+     font-family: 仿宋;
+ }
+ h1{
+    color: #20da87;
+     margin-left: 120px;
+     transition: 1.5s;
+ }
+ 
+ .div2:hover h1{
+     transform: rotateY(360deg);
+ }
+ p{
+    color: #ffefce;
+     margin-left: 120px;
+     font-size: 20px;
+ }
+ 
+ .pic{
+     margin-left: 50px;
+     margin-top: 10px;
+ }
+ 
+ .div1 img{
+     cursor: pointer;
+     transition: all 0.6s;
+     width: 300px;
+     height: 300px;
+     margin-top: 50px;
+ }
+ 
+ .div1 img:hover{
+     transform: scale(1.2);
+ }
+ 
+ .people1{
+     width: 700px;
+     height: 400px;
+     margin: 50px auto;
+     border: solid 1px gray;
+     overflow: hidden;
+ }
+ 
+ .div1{
+     width: 200px;
+     float: left;
+ }
+ 
+ .div1 img{
+     display: block;
+     width: 100%;
+ }
+ 
+ .div2{
+     float: right;
+     width: 450px;
+ }
+ 

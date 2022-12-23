@@ -1,0 +1,251 @@
+body {
+    background-color: rgb(240, 240, 240);
+}
+.header-container {
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    width: 1200px;
+    height: 100px;
+    margin: 0 auto;
+    /* background-color: aqua */
+}
+.header-top {
+    height: 90px;
+    border-bottom: 2px solid #f2f2f2;
+}
+.header-top .logo {
+    float: left;
+    width: 190px;
+    height: 52px;
+    margin-top: 18px;
+    background: url(../images/logo1.png) no-repeat;
+}.logo-point {
+    float: left;
+    margin-left: 10px;
+    margin-top: 10px;
+    font-size: 60px;
+}
+.login-text {
+    float: left;
+    font-size: 25px;
+    margin-top: 30px;
+    margin-left: 10px;
+}
+.header-top > .header-btn {
+    float: right;
+}
+.header-icon {
+    width: 30px;
+    margin: 15px 20px;
+}
+.header-btn > a > div {
+    text-align: center;
+}
+.kehuduan-cur {
+    color: #31c27c;
+}
+
+
+#header-chuangzuozhongxin > a > img:hover {
+    content: url(../images/创作中心-1.png);
+}
+#header-kehuduan > a > img:hover {
+    content: url(../images//客户端-1.png);
+}
+#header-more > a > img:hover {
+    content: url(../images/更多-1.png);
+}
+#header-vip > a > img:hover {
+    content: url(../images/VIP-1.png);
+}
+section {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    background-color: #112d42;
+}
+section::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background-color: #d3d3d3;
+}
+section .container {
+    position: relative;
+    width: 1100px;
+    height: 550px;
+    display: flex;
+    z-index: 1000;
+}
+section .container .contact-info {
+    position: absolute;
+    top: 80px;
+    width: 220px;
+    height: 300px;
+    background-color: #0f3959;
+    z-index: 1;
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    box-shadow: 0 20px 20px rgba(0, 0, 0,0.2);
+}
+section .container .contact-info h2 {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 500;
+}
+section .container .contact-info .info {
+    position: relative;
+    margin: 20px 0;
+}
+
+section .container .contact-info .info li {
+    position: relative;
+    list-style: none;
+    display: flex;
+    margin: 40px 0;
+    cursor: pointer;
+    align-items: flex-start;
+}
+section .container .contact-info .info li span:nth-child(1) {
+    width: 30px;
+    min-width: 30px;
+}
+section .container .contact-info .info li span:nth-child(1) img {
+    max-width: 100%;
+    filter: invert(1);
+    opacity: 0.5;
+}
+section .container .contact-info .info li span:nth-child(2) {
+    color: #fff;
+    margin-left: 10px;
+    font-weight: 300;
+    opacity: 0.5;
+    margin-top: 8px;
+}
+section .container .contact-info .info li:hover span:nth-child(1) img,
+section .container .contact-info .info li:hover span:nth-child(2) {
+    opacity: 1;
+}
+
+
+
+section .container .contact-form {
+    position:absolute;
+    top: 55px;
+    padding: 70px 50px;
+    background: #fff;
+    width: 500px;
+    margin-left: 150px;
+    padding-left: 250px;
+    height: 300px;
+    box-shadow: 0 50px 50px rgba(0, 0, 0, 0.5);
+}
+section .container .contact-form h2 {
+    color: #0f3959;
+    font-size: 24px;
+    font-weight: 500;
+}
+section .container .contact-form .form-box {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 30px;
+}
+section .container .contact-form .inputBox {
+    position: relative;
+    margin: 0 0 35px 0;
+    width: 250px;
+}
+section .container .contact-form .inputBox-W {
+    width: 600px;
+}
+section .container .contact-form .inputBox input,
+section .container .contact-form .inputBox-W textarea
+ {
+    width: 235px;
+    padding: 5px 0;
+    font-size: 18px;
+    font-weight: 300;
+    color: #333; 
+    border: none;
+    border-bottom: 1px solid #777;
+    outline: none;
+}
+section .container .contact-form .inputBox-W textarea {
+    height: 40px;
+}
+section .container .contact-form .inputBox span,
+section .container .contact-form .inputBox-W span
+ {
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 18px;
+    font-weight: 300;
+    color: #333; 
+    transition: 0.5s;
+    pointer-events: none;
+}
+section .container .contact-form .inputBox input:focus ~ span,
+section .container .contact-form .inputBox-W textarea:focus ~ span,
+section .container .contact-form .inputBox input:valid ~ span,
+section .container .contact-form .inputBox-W textarea:valid ~ span  
+{
+    transform: translateY(-20px);
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: black;
+}
+.inputBox-H input {
+    border: 1px solid #777;
+    margin-top: 40px;
+    width: 500px;
+    border-radius: 5px;
+    background: #112d42;
+    color: #f2f2f2;
+}
+
+
+
+
+
+
+/* footer */
+.footer {
+    height: 100px;
+    background-color: #333;
+}
+.footer-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.footer,
+.footer a {
+    color: #999;
+}
+.footer a:hover {
+    color: #31c27c;
+}
+.footer-copyright {
+    font-size: 12px;
+    text-align: center;
+}
+.footer-copyright p {
+    line-height: 30px;
+}
+.footer-copyright a {
+    display: inline;
+    font-size: 24px;
+}
+.footer-copyright span {
+    padding: 0 4px;
+}

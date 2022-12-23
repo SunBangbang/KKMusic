@@ -1,0 +1,251 @@
+
+  body {
+    font-family: Arial;
+    padding: 10px;
+    /*background:url(D:\web\30组\images\background-1.jpg) bottom;*/
+    background-repeat: no-repeat;
+    background-color: #d8d8d8;
+    background-size: 100% 100%;
+  }
+  
+
+  /* 页眉/Blog 标题 */
+.header {
+  padding: 0;
+  text-align: center;
+}
+
+
+/* 创建并排的三个非等列 */
+.column {
+  float: left;
+  padding: 10px;
+}
+/* 左列 */
+.column.leftcolumn-none {  
+
+  height: 100px;
+  width: 10%;
+  
+}
+.column.Column { 
+
+  width: 80%;
+}
+.column.rightcolumn-none{   
+  height: 100px;
+  width: 10%;
+}
+/* 响应式布局 - 当屏幕的宽度小于 800 像素时，使两列堆叠而不是并排 */
+@media screen and (max-width: 800px) {
+    column.leftcolumn-none,.column.Column,.column.rightcolumn { 
+    width: 100%;
+    padding: 0;
+  }
+}
+/* 清除列之后的浮动 */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* 设置页脚的样式 */
+.footer {
+  background-color: #f1f1f1;
+  padding: 10px;
+  text-align: center;
+}
+
+
+
+.img-container {
+    float: left;
+    width: 19.4%;
+    padding: 5px;
+    margin: 2px 2px;
+    overflow: hidden;
+    border: 2px solid #a9ebff;
+    box-shadow: 0 0 6px rgb(0 0 0 / 15%);
+      -moz-box-shadow: 0 0 6px rgba(0,0,0,0.15);
+      -webkit-box-shadow: 0 0 6px rgb(0 0 0 / 15%);
+    
+  }
+  .img-container img{
+    cursor: pointer;
+    transition: all 0.6s;
+  }
+  .img-container img:hover{
+    transform: scale(1.1);
+  }
+  .img-container p{
+    font-weight: normal;
+    font-size: 5px;
+  }
+  
+  .clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  .Pricebutton {
+    float: left;
+    padding: 5px;
+  }
+  /* 左列 */
+  .Pricebutton.Price {  
+    width: 50%;
+  }
+  .Pricebutton.none {  
+    width: 10%;
+  }
+  .Pricebutton.button {  
+    width: 40%;
+  }
+
+  button {
+    color: var(--color);
+    transition: 0.25s;
+  }
+  button:hover, button:focus {
+    border-color: var(--hover);
+    color: #fff;
+  }
+  button {
+    background: none;
+    border: 1px solid;
+    font: inherit;
+    line-height: 1;
+    margin: 0.1em;
+    padding: 0.3em 1em;
+  }
+  .offset {
+    --color: #19bc8b;
+    --hover: #1973bc;
+  }
+
+  .offset {
+    box-shadow: 0.3em 0.3em 0 0 var(--color), inset 0.3em 0.3em 0 0 var(--color);
+  }
+  .offset:hover, .offset:focus {
+    box-shadow: 0 0 0 0 var(--hover), inset 6em 3.5em 0 0 var(--hover);
+  }    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .tab1title{
+    padding-left: 4% ;
+    padding-bottom: 10px;
+  }
+  .tab1title h2{
+    padding-left: 4% ;
+    padding-bottom: 10px;
+  }
+  .tab2{
+    cursor: pointer;
+    float: left;
+    width: 100%;
+  }
+  .tab2B{	
+    font-size: 1.2vw;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 20% 20% 20% 20%;
+    grid-column-gap: 4%;
+    grid-row-gap: 20px;
+    float: left;
+    width: 100%;
+  }
+  .tab2B img{
+    width: 100%;
+    vertical-align: middle;
+  }
+  .tab2con{
+    padding-left: 10px;
+    background-color: #fff;
+  }
+  .tab2con p {
+    padding-top: 5px;
+    padding-bottom: 10px;
+    font-size: px;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+}
+  .tab2con p:hover{
+    color: #1da6ba;
+  }
+  .tab2con span {
+    display: inline-block;
+    color: #1dba74;
+    font-size: 3px;
+    padding-bottom: 10px;
+}
+  .text p{
+    margin-top: 10px;
+    font-size: 15px;
+  }
+  .text a{
+    color: cadetblue;
+  }
+  .tab{
+    float: left;
+    margin-bottom: 40px;
+  }
+  
+
+
+
+.B {
+	  width: 100%;
+	  position: relative; 
+	  overflow: hidden; 
+	  text-align: center;
+}
+.B img{
+	transition: 0.5s;
+}
+.B:hover img{
+	transform: scale(1.2);
+}
+.text{
+	top: 50%; 
+	left: 50%; 
+	width: 0;
+	height: 0; 
+	overflow: hidden; 
+	padding: 0;
+	position: absolute;
+	opacity: 0.75;
+	color: #000; 	
+	transition: 0.5s;
+}
+.B.effect:hover .text{
+	width: 100%;
+	top: 0;
+	left: 0;
+	height: 100%;
+	background-color: #fff;		
+}
+.B.effect:hover .text h3{
+	padding-top: 20%;
+}
